@@ -439,6 +439,18 @@ CONFIG_BRIDGED_DEVICE_SIMULATED_ONOFF_IMPLEMENTATION
       Shell-controlled simulated OnOff device.
       The state of the simulated device is changed using shell commands.
 
+If you selected the Bluetooth LE device implementation using the :ref:`CONFIG_BRIDGED_DEVICE_BT <CONFIG_BRIDGED_DEVICE_BT>` Kconfig option, also check and configure the following options:
+
+.. _CONFIG_BRIDGE_BT_MAX_SCANNED_DEVICES:
+
+CONFIG_BRIDGE_BT_MAX_SCANNED_DEVICES
+   Set the maximum amount of scanned devices.
+
+.. _CONFIG_BRIDGE_BT_SCAN_TIMEOUT_MS:
+
+CONFIG_BRIDGE_BT_SCAN_TIMEOUT_MS
+   Set the Bluetooth scan tiemout in milliseconds.
+
 The following options affect how many bridged devices the application supports.
 See the :ref:`matter_bridge_app_bridged_support_configs` section for more information.
 
